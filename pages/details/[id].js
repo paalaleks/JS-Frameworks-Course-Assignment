@@ -2,11 +2,14 @@ import Head from "next/head";
 import Layout from "../../components/Layout";
 import MainLayout from "../../components/MainLayout";
 import { BASE_URL } from "../../constants/api";
+import Header from "../../components/Header";
 
 const Post = ({ post }) => {
+  console.log(post);
   if (!post) {
     return <h1>Loading</h1>;
   }
+
   return (
     <>
       <Head>
@@ -15,8 +18,13 @@ const Post = ({ post }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
+        <Header
+          header={`Post ID ${post.id}: "${post.title}"`}
+          headerColor={"bg-primary-content"}
+        />
+
         <MainLayout>
-          <div>{post.body}</div>
+          <p className="mt-6">{post.body}</p>
         </MainLayout>
       </Layout>
     </>
