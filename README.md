@@ -1,85 +1,63 @@
-# JS Frameworks Course Assignment
+# JS-framework course assignment
 
-## Brief
+![image](https://res.cloudinary.com/paalaleks/image/upload/v1671198805/medium_Screenshot_2022_12_16_at_14_51_13_60fdb07f4f.png)
 
-Create either a new React or Next.js app in this repo.
+## Description
 
-For the login functionality, use either a Wordpress installation with the <a href="https://wordpress.org/plugins/jwt-authentication-for-wp-rest-api/" target="_blank">JWT plugin from Module 3</a> installed, or a Strapi installation. Do not add either of these to your repo. Your API should remain a separate project. The markers will use their own installations when marking.
+This project is my exam project the last semester in school. The website is for a solar company that install and maintain solar systems on residential and warehouse buildings.
 
-You can use either a REST or GraphQL API for the API calls.
+You can add some bullet points if you'd like to:
 
----
+- Daisy UI was used to set up an easy interface.
+- Tailwind accompanies Daisy UI.
+- Next.js is used to make the webpage seo friendly and run effeciently with static page rendering.
+- After linting it's all deployed to Vercel.
 
-## Assessment
+## Built With
 
-Please provide your login credentials for assessment.
+You can list a the tech stack that you've used over here
 
-Example
-- username: xxxxxx
-- password: xxxxxx
+- [Next.js](https://nextjs.org/)
+- [Tailwind](https://tailwindcss.com/)
+- [Daisy UI](https://daisyui.com/)
+- [Vercel](https://vercel.com)
 
-## Level 1
+## Getting Started
 
-Your app should have the following paths:
+### Installing
 
--   "/"
--   "/detail/:param"
--   "/contact"
--   "/login"
--   "/admin"
+Clone the repo with the following commands:
 
-The admin path won't appear in your navigation.
+1. Clone the repo:
 
-Use reusable components where appropriate and pay attention to how the components are arranged.
+```bash
+git clone https://github.com/paalaleks/JS-Frameworks-Course-Assignment.git
+```
 
-### Home
+2. Install the dependencies:
 
-Find an API that returns at least:
+```
+npm install
+```
 
--   an array of items
--   a single item retrieved by a parameter (id, name, slug, etc)
+### Running
 
-If you are using Next you can also hard-code json and return it from API routes created in `pages/api/*`.
+After you cloned and installed the dependencies you can run the app locally on port http://localhost:1234
 
-You can use your own Wordpress or Strapi or any other API that you have created for these calls but it must be publically hosted - it must not be running on your localhost.
+To run the app, run the following commands:
 
-Display at least 2 properties from each result.
+```bash
+npm run start
+```
 
-Each result should link to the detail page, passing a parameter in the URL.
+## See the page here
 
-### Detail
+[https://js-frameworks-course-assignment-theta.vercel.app/](https://js-frameworks-course-assignment-theta.vercel.app/)
 
-Retrieve the parameter from the URL and use it in an API call to fetch one item.
+## Contact
 
-Display at least 3 properties from the item.
+This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
 
-### Contact
+[Email me for requests you might have](mailto:paalaleks@hotmail.com)
 
-Create a form with the following inputs and validation:
-
--   First name - required, minimum 3 characters
--   Last name - required, minimum 4 characters
--   Email - required, must be in a valid email format
--   Subject - required, this must be a select box with at least 2 options
--   Message - required, minimum 10 characters.
-
-### Login
-
-Create a form with username/email and password fields. The inputs should have the necessary validation for a login form (not a registration form).
-
-The form should make a login request to either a Wordpress API with the JWT plugin installed or a Strapi API. If the login is successful redirect the user to the admin route.
-
-If the login is unsuccessful display a message above the form.
-
-### Admin
-
-This page will simply display an "Admin" heading.
-
----
-
-## Level 2
-
-Add a favourite button/icon component to each result on your home page. Clicking this button will toggle the result in/out of a favourites array.
-
-Add a "/favourites" path to your routes. This page will display all the items currently in the favourites array.
-# js-framework
+[Or find me on LinkedIn](www.linkedin.com/in/fullstakk)
