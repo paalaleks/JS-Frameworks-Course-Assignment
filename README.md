@@ -4,9 +4,10 @@
 
 ## Description
 
-This project is my exam project the last semester in school. The website is for a solar company that install and maintain solar systems on residential and warehouse buildings.
+This is a a few simple webpages that provide login and saving favorites to an array. This was done fall 2022. It is made with Daisy UI a great UI library that makes the whole process of setting up a webpage a lot more easier. It's made in Next with static html page rendering.
 
-- Daisy UI was used to set up an easy interface.
+
+- Daisy UI was used to set up UI easily.
 - Tailwind accompanies Daisy UI.
 - Next.js is used to make the webpage seo friendly and run effeciently with static page rendering.
 - After linting it's all deployed to Vercel.
